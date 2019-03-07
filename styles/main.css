@@ -1,0 +1,130 @@
+/* 
+Author: Alex Cleland
+Submitted: March 7, 2019 
+Description: CSS for the Halloween HTML index.
+*/
+
+
+html {
+  background: url(../images/bats.gif) center;
+}
+
+body  {
+	/*font settings.*/
+	font-family: Verdana, Arial;
+
+	/*sets background to white.*/
+	background-color: white;
+
+	/* To centre the body horizantally. */
+	margin: auto;
+	width: 800px;
+
+	/* Sets up the border. */
+	border: 3px solid black;
+
+
+	/* Set up the shadow */
+	box-shadow: 0px 0px 50px;
+}
+
+/*Sets up default for the links without having clicked/hovering over, etc.*/
+a {
+	font-weight: bold;
+    	color: orange;
+}
+
+/*Sets up link when it's been visited.*/
+a:link, a:visited {
+    	color: orange;
+}
+
+/*Sets up link when it's being hovered over or focussed.*/
+a:hover, a:focus {
+    	color: green;
+}
+
+/*Sets up the padding for the header, main and footer.*/
+header, main, footer {
+ 	padding-left: 20px;
+  	padding-right: 20px;
+}
+
+/* Header stuff */
+header {
+
+	/*sets up the bottom border for the header.*/
+	border-bottom: 3px solid black;
+
+
+    	/* This does the 45° angle, starting with white at the left to orange ¾ of the way to the right to black at the right*/
+    	background: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	
+	/*sets up padding for the top of the header.*/
+    	padding-top: 10px;
+}
+
+/*The header image gets floated left.*/
+header img {
+	float: left;
+}
+
+/*Sets up the h2 font, indent and margin.*/
+header h2 {
+	font-size: 230%;
+	text-indent: 25px;
+  	margin: 0px;
+}
+
+/*Sets up the h3 font, indent and margin.*/
+header h3 {
+	font-size: 125%;
+	text-indent: 25px;
+  	margin: 8px;
+}
+
+/* Main stuff */
+main {
+  	display: flex;
+}
+
+main h1 {
+	font-size: 140%;
+}
+
+main h1:first-letter {
+	font-size: 240%;
+}
+
+main h2 {
+	font-size: 125%;
+}
+
+main h3 {
+	font-size: 110%;
+}
+
+main #sidebar {
+  	width: 160px;
+}
+main #sidebar ul {
+	line-height: 1.5;
+}
+
+/*Footer stuff.*/
+footer {
+	
+	/*border top for the footer.*/
+	border-top: 3px solid black;
+
+    	/* Just tweaked the angle of the header gradient */
+    	background: linear-gradient(225deg, white 0%, orange 75%, black 100%);
+	
+	/*bottom padding for the footer.*/
+    	padding-bottom: 1px;
+}
+
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
